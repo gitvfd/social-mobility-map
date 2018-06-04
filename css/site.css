@@ -1,0 +1,441 @@
+h1{
+  float:left;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-bottom: 5px;
+  font : 24px Caecilia lt bold; color:#0297C9;
+  padding: 0px 5px 0px 0px;
+  display: inline-block;
+}
+
+h2{
+  margin-bottom: 2px;
+  padding-bottom: 5px;
+  font : 16px Caecilia lt; color:#7A7A7A;
+  padding: 5px 10px 10px 0px;
+  display: inline-block;
+
+}
+
+h3 {
+    -webkit-margin-after: 0.2em;
+}
+
+
+
+
+
+div.tooltip {
+     position:absolute;
+     width: auto;
+      height: auto;
+      padding: 10px;
+      background-color: white;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+      pointer-events: none;
+      opacity: 0.90;
+      filter:alpha(opacity=90);
+      -moz-opacity:0.90;
+}
+
+#world {
+  /**stroke: #deeaf1;**/
+  stroke-width: 0px;
+ fill: #deeaf1;
+  opacity: 1;
+}
+
+#mobilityMap{
+
+  background-image:linear-gradient(rgba(221,233,239,.3), rgba(248,250,252,.1));
+}
+
+#indic_sel{
+  clear: both;
+  float:left;
+  width:22.5%;
+  min-width:300px;
+  margin-right: 0.5%;
+  margin-left:0.5%;
+  margin-top:0.5%;
+  margin-bottom:0.5%;
+  border-style: solid;
+  border-width: 1px;
+  border-color:  #006FB3;
+  background-color: #0b71b0;
+  padding-left:5px;
+
+  color:#fff;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+#indic_dropdown{
+  float:left;
+  width:98%;
+  font-family:Caecilia,Georgia, serif;
+  font-weight:300;
+  font-size:18px;
+  text-align:start;
+  letter-spacing:normal;
+  color:#ffffff;
+  padding: 0 1%;
+  vertical-align: baseline;
+  color: white;
+  cursor: pointer;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0;
+  background-color: #0b71b0;
+  border:none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 5px;
+}
+
+
+#state-borders {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+.background {
+  fill: #deeaf1;
+  pointer-events: all;
+}
+
+
+
+
+
+#ShareMigSmall,#lengthStaySmall,#eduattainSmall,#UnempSmall,#PartRateSmall,#overQualRateSmall{
+	display:block;
+   	width:150px;
+   	margin: 0 auto;
+}
+.regQuestion{
+  	font : 12px Caecilia lt normal; color:#398291;
+  	font-style: italic;
+  }
+
+#migrantsIconography{
+	position: center;
+}
+
+#source{
+    border-top: 1px solid #006FB3;
+  	min-height: 700px;
+	background-color:#ffffff;
+  	font : 12px Caecilia lt bold; color:#0297C9;
+}
+
+
+#first{
+	width:100%;
+	margin:0px;
+	padding:0px;
+	border:none;
+    position: fixed;
+
+}
+
+#second{
+	margin:0;
+	padding:0;
+	background:rgba(255,255,255,0.99);
+	top:500px;
+    position: relative;
+}
+
+
+#regionTooltip{
+    visibility: hidden;
+}
+
+text.labelIcon {
+  	font : 16px Caecilia lt bold; fill:#7A7A7A;
+	text-shadow: 
+   		-2px -2px 0 #fff,  
+    	2px -2px 0 #fff,
+    	-2px 2px 0 #fff,
+     	2px 2px 0 #fff;
+}
+#countryCard{
+  background:#f6f6f6;
+}
+
+#graph{
+  background-image: repeating-linear-gradient(45deg, rgba(222, 234, 241,0.5), rgba(222, 234, 241,0.6) 0.75px, rgba(255, 255, 255,0.6) 0.75px, rgba(255, 255, 255,0.5) 5px);
+}
+
+#chartAnnotation{
+  	font : 12px Caecilia lt italic; color:#0297C9;
+
+}
+#intro {
+  top: 8%;
+  left:60%;
+  position: absolute;
+  font-size:24px;
+  padding: 20px 20px 20px 20px;
+  color: #000000;
+  border-color:#8EA4B1;
+  border-width:1px;
+  border-style:solid;
+  background-image: repeating-linear-gradient(45deg, #F68385, #F68385 0.75px, #fff 0.75px, #fff 5px);
+  opacity:0.6;
+
+}
+
+#regionRef {
+  top: 400px;
+  left:10%;
+  position: absolute;
+font-size:28px;
+padding: 20px 20px 20px 20px;
+  color: #0297C9;
+  border-color:#8EA4B1;
+  border-width:1px;
+  border-style:solid;
+background-image: repeating-linear-gradient(45deg, #deeaf1, #deeaf1 0.75px, #fff 0.75px, #fff 5px);
+
+}
+
+.axis line{
+  stroke: white;
+}
+
+.axis path{
+  stroke: none;
+}
+
+.axis text{
+  fill: grey;
+}  
+
+
+#cardView{
+	margin-right: auto;
+	margin-left: auto;
+	max-width:900px;
+}
+
+#toolbar{
+    float: right;
+    position: relative;
+    left: -50%;
+    display: inline-block;
+}
+
+
+.button{
+    position: relative;
+    left: 50%; 
+  min-width: 130px;
+  padding: 4px 5px;
+  cursor: pointer;
+  text-align: center;
+  font: 14px  Caecilia, Helvetica, Arial, sans-serif;
+  font-weight:400;
+  float:left;
+  margin: 2px 5px 2px 5px;
+  color:#464646;
+  border: 1px solid #e0e0e0;
+}
+
+
+.button.active {
+  background: #939393 ;/**#b200b1 **//**#8EA4B1**/;
+  color: #fff;
+}
+
+
+
+
+
+#container{
+  position: relative;
+}
+
+#sections{
+  border-top: 1px solid #006FB3;
+  border-bottom: 1px solid #006FB3;
+  margin-bottom: 50px;
+  width: 340px;
+  font : 18px Caecilia lt bold; color:#6A6A6A;
+}
+
+.citation{
+	display:block;
+	margin: 10px 0px 10px 0px;
+	padding:5px;
+  	font : 18px Caecilia lt; color:#7A7A7A;
+  	font-style: italic;
+  	background:rgba(255,255,255,0.5);
+  	border-radius: 4px;
+}
+
+.descIndic{
+  font : 17.5px Caecilia lt bold; color:#6A6A6A;
+  line-height: 1.75em;
+}
+
+.explanationIndic{
+  font : 18px Caecilia lt bold; color:#5A5A5A;
+  font-style: normal;
+}
+
+.def{
+  font : 14px Caecilia lt; color:#7A7A7A;
+  font-style: normal;
+}
+
+#sections > div{
+  /**background: white;**/
+  background:#f6f6f6;
+  opacity: .2;
+  padding: 5px;
+  margin-bottom: 200px;
+}
+#sections > div:last-child{
+  margin-bottom: 30px;
+}
+#sections > div.graph-scroll-active{
+  opacity: 1;
+}
+#graph{
+  margin-left: 40px;
+  width: 500px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  float: right;
+}
+
+@media (max-width: 925px)  {
+  #graph{
+    width: 100%;
+    margin-left: 0px;
+    float: none;
+  }
+  #sections{
+    width: auto;
+    position: relative;
+    margin: 0px auto;
+  }
+  #sections div{
+    background: rgba(246,246,246,.8);
+    padding: 10px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin-bottom: 80vh;
+  }
+  pre{
+    overflow: hidden;
+  }
+  h1{
+    margin: 10px;
+  }
+}
+
+
+  	text.x-title {
+      font : 26px Caecilia lt bold; fill:#7A7A7A;
+    }
+    .domain{
+    	stroke:none;
+    }
+    .tick line{
+    	stroke:none;
+    }
+
+    .tick text{
+      font : 12px Caecilia;
+      font-weight: 700; fill:#7A7A7A;
+    }
+
+    /** Style country card axis**/
+    .yAxis text{
+      font : 12px Caecilia;
+      font-weight: 300; 
+      fill:#7A7A7A;
+    }    
+
+    .xAxis text{
+      font : 13px Caecilia;
+      font-weight: 700; 
+      fill:#7A7A7A;
+    }   
+
+
+    /** Style ScatterPlot card axis**/
+
+    .yAxisScatter text{
+      font : 13px Caecilia;
+      font-weight: 300; 
+      fill:#7A7A7A;
+    }    
+
+    .xAxisScatter text{
+      font : 13px Caecilia;
+      font-weight: 300; 
+      fill:#7A7A7A;
+    }   
+
+	text#xTitle {
+	  font : 16px Caecilia lt bold; fill:#7A7A7A;
+	}
+	text#yTitle {
+	  font : 16px Caecilia lt bold; fill:#7A7A7A;
+	}
+
+
+    .grid-line {
+		stroke: #7A7A7A;
+	  	stroke-opacity: 0.4;
+ 	 	shape-rendering: crispEdges;
+    }
+    
+    .lollipop-line {
+      stroke: #979797;
+      stroke-width: 0.25px;
+    }
+    
+    .lollipop-start {
+      fill: #F68385;
+    }
+    
+    .lollipop-end {
+      fill: #398291;
+    }
+    .circleLabel{
+      font : 10px Caecilia lt; fill:#7A7A7A;
+
+    }
+
+	.noteCircle{
+	  	font : 14px Caecilia lt ; color:#7A7A7A;
+	  	font-style: italic;
+
+	}    
+	.circle:before {
+	  content: ' \25CF';
+	  font-size: 40px;
+	  color: #F68385;
+	  font-style: normal;
+	  vertical-align:middle;/** or sub **/
+
+	}
+
+	.topicIcon{
+		float:left;
+		width:30px;
+		margin-top: 15px;
+		margin-right: 15px;
+	}

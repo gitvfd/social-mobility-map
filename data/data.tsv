@@ -1,0 +1,43 @@
+Country	Income_Inequality_level	Earnings	Occupation	Education	Health	Bottom	Bottom_Changes	Top	Top_Changes
+ISL	Low		High	High		High		Medium	
+SVN	Low		Medium	Medium	Low	Low		Low	
+SVK	Low		Medium	Medium		Medium		High	
+DNK	Low	High	High	High	High	High	stable	Low	decrease
+CZE	Low		Medium	Medium	Low	High		Medium	
+FIN	Low	High	Low	Medium		Low	decrease	Low	stable
+BEL	Low	Medium	Medium	Low	High	Low	stable	Low	decrease
+NOR	Low	High	High	Medium		Medium		Low	
+AUT	Low	Low			Medium	Medium	decrease	Low	decrease
+SWE	Low	High	Medium	High	High	Low		Medium	
+LUX	Low				Low	Low	decrease	High	increase
+HUN	Medium	Low	Low	Low	High	Medium		Medium	
+DEU	Medium	Low	Medium	Low	Medium	Medium	stable	Low	decrease
+POL	Medium		Low	Low	Low	Medium		High	
+FRA	Medium	Low	Low	Medium	Medium	Low	decrease	Medium	increase
+KOR	Medium	Medium	Low	High	Low/medium	High	decrease	High	decrease
+CHE	Medium	Low	Medium	Medium	High	Medium		High	
+IRL	Medium	Medium	Medium	Medium	Low	High	stable	Low	decrease
+NLD	Medium	Medium	High	Medium	High	Low	decrease	Low	decrease
+CAN	Medium	High		High	High	Low	decrease	Medium	stable
+ITA	Medium	Medium	Low	Low	Medium	Low	decrease	Medium	stable
+JPN	Medium	Medium		High		High		Medium	
+EST	Medium		High	High	Low	Medium		High	
+PRT	High	Medium	Low	Low	Low	Low	decrease	Medium	stable
+AUS	High	Medium	Low	High	Medium	Medium		High	
+GRC	High	High			High	High	increase	High	increase
+ESP	High	High	Low	Low	Medium	Low	decrease	Low	decrease
+LVA	High					Medium		Medium	
+ISR	High		High	High	Low				
+NZL	High	High							
+GBR	High	Low	High	Low	Medium	High	increase	Medium	stable
+USA	High	Medium	High	High	Low/medium	Medium	decrease	Low	decrease
+TUR	High					High		High	
+CHL	High	Low		Medium	High	High		High	
+MEX	High			Low		Medium		Low								
+RUS	High					Low		Low	
+BRA	High	Low				High		Medium	
+IND	High	Low		Low					
+CHN	High	Low		High		High		High	
+COL	High	Low				Medium		Medium	
+IDN	High			Low		High		High	
+ZAF	High	Low		Low		High		High	
