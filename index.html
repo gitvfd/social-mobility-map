@@ -14,7 +14,7 @@
 <body>
 	<h1>Social mobility in our societies</h1>
 	<div id="indic_sel">
-          <div class="dropdown_text">Which mobility? </div>
+          <div class="dropdown_text">Type of mobility: </div>
           <select id="indic_dropdown" ><!--onchange="drawTheSlopes(this.value,country_sel),updateUnit(this.value)";>-->
 	        <option value="Income_Inequality_level" selected="selected">Income inequality level</option>
   			<optgroup label="Social mobility across generations">
@@ -98,7 +98,32 @@ var mobiData=[];
       	.attr("height", 15)
       	.attr("x", 0)
       	.attr("y", function(d,i) { return 0.6*height +i*20; })
-      	.attr("fill", function(d,i) { return colors(d); });
+      	.attr("fill", function(d,i) { return colors(d); })
+      	.on("mouseover",function(d){
+      		divMap.transition()    
+		            .duration(250)    
+		            .style("opacity", .9); 
+
+		      	var htmlText;
+		      	if(d=="Low/Medium")
+		      		htmlText="Def low medium"
+		      	else if(d=="Low")
+		      		htmlText="Def low"
+		      	else if(d=="Medium")
+		      		htmlText="Def medium"
+		      	else if(d=="High")
+		      		htmlText="Def high"
+
+			    divMap.html(htmlText)  
+			        .style("left", (d3.event.pageX) +28 + "px")   
+			        .style("top", (d3.event.pageY - 28) + "px"); 
+      	})
+      	.on("mouseout",function(d){
+
+          	divMap.transition()    
+              	.duration(250)    
+              	.style("opacity", 0); 
+      	});
     
     key.selectAll(".caption")
         .data(["Low","Low/Medium","Medium","High","no data"])
@@ -157,9 +182,7 @@ var mobiData=[];
 		            .duration(250)    
 		            .style("opacity", .9);    
 	   	 		d3.select(this).properties.ISO3_CODE
-				console.log(indicSel)
-				console.log(d.properties.ISO3_CODE)
-				console.log(d)
+
 				var trend;
 				if(indicSel=="Bottom"||indicSel=="Top"){
 					var indicTrend = indicSel+"_Changes"
@@ -182,11 +205,14 @@ var mobiData=[];
 		      	else 
 		        	def="";**/
 		      	var htmlText;
-		      	if((indicSel=="Bottom"||indicSel=="Top" )&& trend !=""){
-					htmlText=d.properties.NAME_EN +"<Br/><b>" + mobiCou +"</b>" +"<Br/>Changes since 1990: " + trend;
+		      	if(indicSel=="Top" && trend !=""){
+					htmlText=d.properties.NAME_EN +"<Br/>" + indicSel + " income mobility: <b>"+ mobiCou +"</b>" +"<Br/>For the richest, income mobility has "+ trend + " since the 1990s";
+		      	}
+		      	else if(indicSel=="Bottom"&& trend !=""){
+					htmlText=d.properties.NAME_EN +"<Br/>" + indicSel + " income mobility: <b>"+ mobiCou +"</b>" +"<Br/>For the poorest, income mobility has "+ trend + " since the 1990s"
 		      	}
 		      	else{
-		      		htmlText=d.properties.NAME_EN +"<Br/><b>" + mobiCou +"</b>"
+		      		htmlText=d.properties.NAME_EN +"<Br/>" + indicSel + " mobility across generations: <b>"+ mobiCou +"</b>"
 		      	}
 
 			    divMap.html(htmlText)  
