@@ -206,10 +206,16 @@ var mobiData=[];
 		        	def="";**/
 		      	var htmlText;
 		      	if(indicSel=="Top" && trend !=""){
-					htmlText=d.properties.NAME_EN +"<Br/>" + indicSel + " income mobility: <b>"+ mobiCou +"</b>" +"<Br/>For the richest, income mobility has "+ trend + " since the 1990s";
+					htmlText=d.properties.NAME_EN +"<Br/>" + "Income mobility for top earners is <b>"+ mobiCou +"</b>" +"<Br/>For the richest, income mobility has "+ trend + " since the 1990s";
 		      	}
 		      	else if(indicSel=="Bottom"&& trend !=""){
-					htmlText=d.properties.NAME_EN +"<Br/>" + indicSel + " income mobility: <b>"+ mobiCou +"</b>" +"<Br/>For the poorest, income mobility has "+ trend + " since the 1990s"
+					htmlText=d.properties.NAME_EN +"<Br/>" + "Income mobility for bottom earners is <b>"+ mobiCou +"</b>" +"<Br/>For the poorest, income mobility has "+ trend + " since the 1990s"
+		      	}
+		      	else if(indicSel=="Top" && trend ==""){
+					htmlText=d.properties.NAME_EN +"<Br/>" + "Income mobility for top earners is <b>"+ mobiCou +"</b>" ;
+		      	}
+		      	else if(indicSel=="Bottom"&& trend ==""){
+					htmlText=d.properties.NAME_EN +"<Br/>"+ "Income mobility for bottom earners is <b>"+ mobiCou +"</b>" ;
 		      	}
 		      	else{
 		      		htmlText=d.properties.NAME_EN +"<Br/>" + indicSel + " mobility across generations: <b>"+ mobiCou +"</b>"
