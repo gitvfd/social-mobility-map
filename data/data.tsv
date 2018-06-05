@@ -2,35 +2,35 @@ Country	Income_Inequality_level	Earnings	Occupation	Education	Health	Bottom	Bott
 ISL	Low		High	High		High		Medium	
 SVN	Low		Medium	Medium	Low	Low		Low	
 SVK	Low		Medium	Medium		Medium		High	
-DNK	Low	High	High	High	High	High	stable	Low	decrease
+DNK	Low	High	High	High	High	High	stable	Low	decreased
 CZE	Low		Medium	Medium	Low	High		Medium	
-FIN	Low	High	Low	Medium		Low	decrease	Low	stable
-BEL	Low	Medium	Medium	Low	High	Low	stable	Low	decrease
+FIN	Low	High	Low	Medium		Low	decreased	Low	stable
+BEL	Low	Medium	Medium	Low	High	Low	stable	Low	decreased
 NOR	Low	High	High	Medium		Medium		Low	
-AUT	Low	Low			Medium	Medium	decrease	Low	decrease
+AUT	Low	Low			Medium	Medium	decreased	Low	decreased
 SWE	Low	High	Medium	High	High	Low		Medium	
-LUX	Low				Low	Low	decrease	High	increase
+LUX	Low				Low	Low	decreased	High	increased
 HUN	Medium	Low	Low	Low	High	Medium		Medium	
-DEU	Medium	Low	Medium	Low	Medium	Medium	stable	Low	decrease
+DEU	Medium	Low	Medium	Low	Medium	Medium	stable	Low	decreased
 POL	Medium		Low	Low	Low	Medium		High	
-FRA	Medium	Low	Low	Medium	Medium	Low	decrease	Medium	increase
-KOR	Medium	Medium	Low	High	Low/medium	High	decrease	High	decrease
+FRA	Medium	Low	Low	Medium	Medium	Low	decreased	Medium	increased
+KOR	Medium	Medium	Low	High	Low/medium	High	decreased	High	decreased
 CHE	Medium	Low	Medium	Medium	High	Medium		High	
-IRL	Medium	Medium	Medium	Medium	Low	High	stable	Low	decrease
-NLD	Medium	Medium	High	Medium	High	Low	decrease	Low	decrease
-CAN	Medium	High		High	High	Low	decrease	Medium	stable
-ITA	Medium	Medium	Low	Low	Medium	Low	decrease	Medium	stable
+IRL	Medium	Medium	Medium	Medium	Low	High	stable	Low	decreased
+NLD	Medium	Medium	High	Medium	High	Low	decreased	Low	decreased
+CAN	Medium	High		High	High	Low	decreased	Medium	stable
+ITA	Medium	Medium	Low	Low	Medium	Low	decreased	Medium	stable
 JPN	Medium	Medium		High		High		Medium	
 EST	Medium		High	High	Low	Medium		High	
-PRT	High	Medium	Low	Low	Low	Low	decrease	Medium	stable
+PRT	High	Medium	Low	Low	Low	Low	decreased	Medium	stable
 AUS	High	Medium	Low	High	Medium	Medium		High	
-GRC	High	High			High	High	increase	High	increase
-ESP	High	High	Low	Low	Medium	Low	decrease	Low	decrease
+GRC	High	High			High	High	increased	High	increased
+ESP	High	High	Low	Low	Medium	Low	decreased	Low	decreased
 LVA	High					Medium		Medium	
 ISR	High		High	High	Low				
 NZL	High	High							
-GBR	High	Low	High	Low	Medium	High	increase	Medium	stable
-USA	High	Medium	High	High	Low/medium	Medium	decrease	Low	decrease
+GBR	High	Low	High	Low	Medium	High	increased	Medium	stable
+USA	High	Medium	High	High	Low/medium	Medium	decreased	Low	decreased
 TUR	High					High		High	
 CHL	High	Low		Medium	High	High		High	
 MEX	High			Low		Medium		Low								
