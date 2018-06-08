@@ -16,7 +16,7 @@
 	<div id="indic_sel">
           <div class="dropdown_text">Type of mobility: </div>
           <select id="indic_dropdown" ><!--onchange="drawTheSlopes(this.value,country_sel),updateUnit(this.value)";>-->
-	        <option value="Income_Inequality_level" selected="selected">Income inequality level</option>
+	        <!--<option value="Income_Inequality_level" selected="selected">Income inequality level</option>-->
   			<optgroup label="Social mobility across generations">
           	
 	             <option value="Earnings" selected="selected">Earnings across generations</option>
@@ -24,10 +24,10 @@
 	             <option value="Education" >Education across generations</option>
 	             <option value="Health" >Health across generations</option>
 	        </optgroup>
-  			<optgroup label="Own income persistence (across the lifetime)">             
+  			<!--<optgroup label="Own income persistence (across the lifetime)">             
 	             <option value="Bottom" >Bottom of the income distribution</option>
 	             <option value="Top" >Top of the income distribution</option>
-	        </optgroup>
+	        </optgroup>-->
           </select>
       </div>
 	<div id="mobilityMap"></div>
@@ -115,13 +115,13 @@ var mobiData=[];
 
 		      	var htmlText;
 		      	if(d=="Low/Medium")
-		      		htmlText="Def low medium"
+		      		htmlText="The level of mobility for each domain is assessed on a qualitative way, by looking at the distribution of each indicator in each domain. For instance, countries are defined as having low level of income inequality if their Gini coefficient falls within the first one-third of the cross country distribution of Gini coefficients."
 		      	else if(d=="Low")
-		      		htmlText="Def low"
+		      		htmlText="The level of mobility for each domain is assessed on a qualitative way, by looking at the distribution of each indicator in each domain. For instance, countries are defined as having low level of income inequality if their Gini coefficient falls within the first one-third of the cross country distribution of Gini coefficients."
 		      	else if(d=="Medium")
-		      		htmlText="Def medium"
+		      		htmlText="The level of mobility for each domain is assessed on a qualitative way, by looking at the distribution of each indicator in each domain. For instance, countries are defined as having medium level of income inequality if their Gini coefficient falls within the second one-third of the cross country distribution of Gini coefficients."
 		      	else if(d=="High")
-		      		htmlText="Def high"
+		      		htmlText="The level of mobility for each domain is assessed on a qualitative way, by looking at the distribution of each indicator in each domain. For instance, countries are defined as having high level of income inequality if their Gini coefficient falls within the third one-third of the cross country distribution of Gini coefficients."
 
 			    divMap.html(htmlText)  
 			        .style("left", (d3.event.pageX) +28 + "px")   
