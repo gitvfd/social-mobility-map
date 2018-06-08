@@ -28,6 +28,7 @@ h3 {
 div.tooltip {
      position:absolute;
      width: auto;
+     max-width: 300px;
       height: auto;
       padding: 10px;
       background-color: white;
