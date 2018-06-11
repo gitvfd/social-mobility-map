@@ -101,7 +101,12 @@ var mobiData=[];
       	.attr("width", 20)
       	.attr("height", 15)
       	.attr("x", 0)
-      	.attr("y", function(d,i) { return 0.6*height +i*20; })
+      	.attr("y", function(d,i) { 
+      		if(width>600)
+      		 return 0.6*height +i*20 ;
+      		else
+      		 return 0.45*height +i*20 ; 
+      	})
       	.attr("fill", function(d,i) { 
       		if(startIndic!="Bottom"||startIndic!="Top")
       			return colors(d)
@@ -139,13 +144,18 @@ var mobiData=[];
     key.selectAll(".caption")
         .data(["Low","Low/Medium","Medium","High","no data"])
         .enter().append("text")
-          .attr("class", "caption")
-          .attr("x", 25)
-      	.attr("y", function(d,i) { return 0.6*height +i*20 +12; })
-          .attr("fill", "#575757")
-          .attr("text-anchor", "start")
-          .attr("font-weight", "normal")
-          .text(function(d){return d;});
+        .attr("class", "caption")
+        .attr("x", 25)
+      	.attr("y", function(d,i) { 
+      		if(width>600)
+      		 return 0.6*height +i*20 + 12;
+      		else
+      		 return 0.45*height +i*20 + 12;  
+      	})
+        .attr("fill", "#575757")
+        .attr("text-anchor", "start")
+        .attr("font-weight", "normal")
+        .text(function(d){return d;});
           
 
 	d3.queue()
@@ -272,9 +282,19 @@ var mobiData=[];
 	    worldMap.selectAll('.world').attr('d', path);
 	    //world.selectAll('.state').attr('d', path);
 	    key.selectAll("rect")
-      	.attr("y", function(d,i) { return 0.6*height +i*20; })
+      	.attr("y", function(d,i) { 
+      		if(width>600)
+      		 return 0.6*height +i*20 ;
+      		else
+      		 return 0.45*height +i*20 ;  
+      	});
 	    key.selectAll(".caption")
-      	.attr("y", function(d,i) { return 0.6*height +i*20 + 15; })
+      	.attr("y", function(d,i) {
+      		if(width>600)
+      		 return 0.6*height +i*20 + 12;
+      		else
+      		 return 0.45*height +i*20 + 12; 
+      	})
 	}
 
         document.getElementById("indic_dropdown").addEventListener("change",function updateMap(){
