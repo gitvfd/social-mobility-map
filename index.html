@@ -244,9 +244,19 @@ var mobiData=[];
 		      	else{
 		      		htmlText=d.properties.NAME_EN +"<Br/>" + indicSel + " mobility across generations: <b>"+ mobiCou +"</b>"
 		      	}
+		      	var xPosition;
+		      	if(width>600){
+			      	if((d3.event.pageX+300)>=width)
+			      		xPosition=d3.event.pageX - 300;
+			      	else
+						xPosition=d3.event.pageX;
+		      	} else{
+		      			xPosition = 0.2*width;
+		      	}
+
 
 			    divMap.html(htmlText)  
-			        .style("left", (d3.event.pageX) +28 + "px")   
+			        .style("left", xPosition +28 + "px")   
 			        .style("top", (d3.event.pageY - 28) + "px"); 
 		    }
     	})
