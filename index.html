@@ -16,7 +16,9 @@
 	<div id="indic_sel">
           <div class="dropdown_text">Type of mobility: </div>
           <select id="indic_dropdown" ><!--onchange="drawTheSlopes(this.value,country_sel),updateUnit(this.value)";>-->
-	        <!--<option value="Income_Inequality_level" selected="selected">Income inequality level</option>-->
+  			<optgroup label="Gini index">
+	        	<option value="Income_Inequality_level" >Income inequality level</option>
+	        </optgroup>
   			<optgroup label="Social mobility across generations">
           	
 	             <option value="Earnings" selected="selected">Earnings across generations</option>
@@ -96,7 +98,7 @@ var mobiData=[];
         .attr("transform", "translate(40,0)");
 
     key.selectAll("rect")
-        .data(["Low","Low/Medium","Medium","High","no data"])
+        .data(["High","Medium","Low/Medium","Low","no data"])
         .enter().append("rect")
       	.attr("width", 20)
       	.attr("height", 15)
@@ -142,7 +144,7 @@ var mobiData=[];
       	});
     
     key.selectAll(".caption")
-        .data(["Low","Low/Medium","Medium","High","no data"])
+        .data(["High","Medium","Low/Medium","Low","no data"])
         .enter().append("text")
         .attr("class", "caption")
         .attr("x", 25)
@@ -241,7 +243,9 @@ var mobiData=[];
 		      	else if(indicSel=="Bottom"&& trend ==""){
 					htmlText=d.properties.NAME_EN +"<Br/>"+ "Income persistence for bottom earners is <b>"+ mobiCou +"</b>" ;
 		      	}
-		      	else{
+		      	else if(indicSel=="Income_Inequality_level"){
+					htmlText=d.properties.NAME_EN +"<Br/>"+ "Income inequality level (Gini index) <b>"+ mobiCou +"</b>" ;
+		      	}else{
 		      		htmlText=d.properties.NAME_EN +"<Br/>" + indicSel + " mobility across generations: <b>"+ mobiCou +"</b>"
 		      	}
 		      	var xPosition;
