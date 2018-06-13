@@ -16,15 +16,15 @@
 	<div id="indic_sel">
           <div class="dropdown_text">Type of mobility: </div>
           <select id="indic_dropdown" ><!--onchange="drawTheSlopes(this.value,country_sel),updateUnit(this.value)";>-->
+  			<optgroup label="Gini index">
+	        	<option value="Income_Inequality_level" >Income inequality level</option>
+	        </optgroup>
   			<optgroup label="Social mobility across generations">
           	
 	             <option value="Earnings" selected="selected">Earnings across generations</option>
 	             <option value="Occupation" >Occupation across generations</option>
 	             <option value="Education" >Education across generations</option>
 	             <option value="Health" >Health across generations</option>
-	        </optgroup>
-  			<optgroup label="Related data">
-	        	<option value="Income_Inequality_level" >Income inequality level</option>
 	        </optgroup>
   			<!--<optgroup label="Own income persistence (across the lifetime)">             
 	             <option value="Bottom" >Bottom of the income distribution</option>
@@ -243,7 +243,9 @@ var mobiData=[];
 		      	else if(indicSel=="Bottom"&& trend ==""){
 					htmlText=d.properties.NAME_EN +"<Br/>"+ "Income persistence for bottom earners is <b>"+ mobiCou +"</b>" ;
 		      	}
-		      	else{
+		      	else if(indicSel=="Income_Inequality_level"){
+					htmlText=d.properties.NAME_EN +"<Br/>"+ "Income inequality level (Gini index) <b>"+ mobiCou +"</b>" ;
+		      	}else{
 		      		htmlText=d.properties.NAME_EN +"<Br/>" + indicSel + " mobility across generations: <b>"+ mobiCou +"</b>"
 		      	}
 		      	var xPosition;
