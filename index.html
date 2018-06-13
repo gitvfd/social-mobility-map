@@ -16,13 +16,15 @@
 	<div id="indic_sel">
           <div class="dropdown_text">Type of mobility: </div>
           <select id="indic_dropdown" ><!--onchange="drawTheSlopes(this.value,country_sel),updateUnit(this.value)";>-->
-	        <!--<option value="Income_Inequality_level" selected="selected">Income inequality level</option>-->
   			<optgroup label="Social mobility across generations">
           	
 	             <option value="Earnings" selected="selected">Earnings across generations</option>
 	             <option value="Occupation" >Occupation across generations</option>
 	             <option value="Education" >Education across generations</option>
 	             <option value="Health" >Health across generations</option>
+	        </optgroup>
+  			<optgroup label="Related data">
+	        	<option value="Income_Inequality_level" >Income inequality level</option>
 	        </optgroup>
   			<!--<optgroup label="Own income persistence (across the lifetime)">             
 	             <option value="Bottom" >Bottom of the income distribution</option>
@@ -96,7 +98,7 @@ var mobiData=[];
         .attr("transform", "translate(40,0)");
 
     key.selectAll("rect")
-        .data(["Low","Low/Medium","Medium","High","no data"])
+        .data(["High","Medium","Low/Medium","Low","no data"])
         .enter().append("rect")
       	.attr("width", 20)
       	.attr("height", 15)
@@ -142,7 +144,7 @@ var mobiData=[];
       	});
     
     key.selectAll(".caption")
-        .data(["Low","Low/Medium","Medium","High","no data"])
+        .data(["High","Medium","Low/Medium","Low","no data"])
         .enter().append("text")
         .attr("class", "caption")
         .attr("x", 25)
